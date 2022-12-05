@@ -1,1 +1,255 @@
-<h1>Hello!</h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="utf-8"> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MMoT: Mixture-of-Modality-Tokens Transformer for Composed Multimodal Conditional Image Synthesis">
+
+        <title>MMoT: Mixture-of-Modality-Tokens Transformer for Composed Multimodal Conditional Image Synthesis</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+        <link rel="stylesheet" type="text/css" href="./custom.css">
+
+    </head>
+
+    <body>
+        <header class="jumbotron text-center" style="padding: 2%;">
+            <!-- Title -->
+            <div class="container">
+                <h2 class="jumbotron-heading">MMoT: Mixture-of-Modality-Tokens Transformer <br /> for Composed Multimodal Conditional Image Synthesis</h2>
+            </div>
+            
+            <div class="buttons">
+                <a target="_blank" class="btn btn-secondary my-2">Paper</a>
+                <a target="_blank" class="btn btn-secondary my-2">Arxiv</a>
+                <a target="_blank" class="btn btn-secondary my-2">Video</a>
+                <a target="_blank" class="btn btn-secondary my-2">Code</a>
+            </div>
+            
+        </header>
+        
+        <main>
+            <!-- Abstract -->
+            <section class="container text-justify">
+                <h5 class="text-center">Abstract</h5>
+                <p>
+                    Existing multimodal conditional image synthesis (MCIS) methods generate images conditioned on any combinations of various modalities that require all of them must be exactly conformed, hindering the synthesis controllability and leaving the potential of cross-modality under-exploited.
+                    To this end, we propose to generate images conditioned on the compositions of multimodal control signals, where modalities are imperfectly complementary, i.e., composed multimodal conditional image synthesis (CMCIS).
+                    Specifically, to address the modality coordination problem, we introduce the Mixture-of-Modality-Tokens Transformer (MMoT) that adaptively fuses fine-grained multimodal control signals.
+                    For the modality imbalance problem, we propose a multimodal balanced training loss to stabilize the optimization of each modality, and a multimodal sampling guidance to balance the strength of each modality control signal.
+                    Comprehensive experimental results demonstrate that MMoT achieves superior performance on both UCIS and MCIS tasks with high-quality and faithful image synthesis on complex multimodal conditions.
+                </p>
+                
+                <!-- Teaser image -->
+                <div class="img-block">
+                    <img class="normal-item" id="teaser" src="./assets/teaser_image.png" />
+                    <p class="caption">
+                        (a) Modality coordination problem in PoE-GAN: the tree incorrectly composed with the mountain. (b) Modality imbalance problem in PoE-GAN: the text input is simply ignored.
+                        In contrast, our approach can not only synthesize high-quality images when conditioned on a single modality but also generate reasonable results when conditioned on complex compositions of multimodal inputs.
+                    </p>
+                </div>
+                <hr>
+            </section>
+
+            <!-- Video-->
+            <section class="container text-justify">
+                <h5 class="text-center">Video</h5>
+                <hr>
+            </section>
+
+            <!-- Framework-->
+            <section class="container text-justify">
+                <h5 class="text-center">Framework</h5>
+                <p>
+                    The figure below is the overview of the <i>Mixture-of-Modality-Tokens Transformer</i> for CMCIS task. 
+                    Given image and multiple modalities, including text, segmentation masks, sketch and bounding boxes, we tokenize them into discrete tokens with different tokenizers, 
+                    and then (a) model intra-modal interaction with modality-specific encoders; 
+                    (b) inject multimodal conditioning information into the decoder with modality-specific cross-attention; 
+                    (c) adaptively fuse conditional signals via the multistage token-mixer. 
+                    We train MMoT with multimodal balanced loss and sample with divergence-driven multimodal guidance.
+                </p>
+                <div class="img-block">
+                    <img class="normal-item" id="framework" src="./assets/framework.png" />
+                    <p class="caption text-center">
+                        Our framework. Check our paper to see more details of the framework.
+                    </p>
+                </div>
+                <hr>
+            </section>
+
+            <!-- Results-->
+            <section class="container text-justify">
+                <h5 class="text-center">Results</h5>
+                <!-- UCIS Comparisons-->
+                <p>
+                    MMoT achieves superior performance on UCIS task compared with a wide range of existing methods, including text-to-image methods (DF-GAN, DM-GAN+CL), 
+                    segmentation-to-image methods (SPADE, OASIS), 
+                    sketch-to-image methods (Pix2PixHD, SPADE, VQGAN+T), 
+                    layout-to-image methods (LostGAN-V2, Context-L2I, TwFA),
+                    and the state-of-the-art MCIS method (PoE-GAN).
+                </p>
+                <div class="container" style="max-width: 960px;">
+                    <div id="ucis" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <ol class="carousel-indicators hidden">
+                            <li data-target="#ucis" data-slide-to="0" class="active"></li>
+                            <li data-target="#ucis" data-slide-to="1"></li>
+                            <li data-target="#ucis" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i.png" style="width: 100%;"></div>
+                                    <div class="grid-text"><p>Qualitative comparison of text-to-image synthesis on COCO-Stuff.</p></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i.png" style="width: 100%;"></div>
+                                    <div class="grid-text"><p>Qualitative comparison of segmentation-to-image synthesis on COCO-Stuff.</p></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i.png" style="width: 100%;"></div>
+                                    <div class="grid-text"><p>Qualitative comparison of sketch-to-image synthesis on COCO-Stuff.</p></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i.png" style="width: 100%;"></div>
+                                    <div class="grid-text"><p>Qualitative comparison of layout-to-image synthesis on COCO-Stuff.</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#ucis" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#ucis" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <!-- CMCIS Comparisons-->
+                <p>
+                    MMoT can generate high-quality, faithful, and diverse images when conditioned on complex compositions of different modalities while the MCIS model (PoE-GAN) is struggle with the modality coordination
+                    problem and the modality imbalance problem. Below we show some examples generated by PoE-GAN and our MMoT when tested on the CMCIS setting.
+                </p>
+                <div class="container" style="max-width: 960px;">
+                    <div id="mcis" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <ol class="carousel-indicators hidden">
+                            <li data-target="#mcis" data-slide-to="0" class="active"></li>
+                            <li data-target="#mcis" data-slide-to="1"></li>
+                            <li data-target="#mcis" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#mcis" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mcis" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <!-- More CMCIS examples-->
+                <p>
+                    Below are examples of composed multimodal conditional image synthesis tested on CoCo-Stuff. We show three random samples from MMoT conditioned on compositions of different modalities 
+                    (text+segmentation, text+sketch, text+layout, segmentation+sektch, layout_sketch, segmentation+sketch+layout).
+                </p>
+                <div class="container" style="max-width: 960px;">
+                    <div id="cmcis" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <ol class="carousel-indicators hidden">
+                            <li data-target="#cmcis" data-slide-to="0" class="active"></li>
+                            <li data-target="#cmcis" data-slide-to="1"></li>
+                            <li data-target="#cmcis" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2.png" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#cmcis" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#cmcis" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        
+        <footer class="text-muted">
+            <div class="container">
+                <p class="float-right">
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/combine/gh/jablonczay/code-box-copy/clipboard/clipboard.min.js,gh/jablonczay/code-box-copy/code-box-copy/js/code-box-copy.min.js"></script>
+        <script src="https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <script>
+            (function($) {
+                $('.code-box-copy').codeBoxCopy();
+            })(jQuery);
+        </script>
+    </body>
+</html>
