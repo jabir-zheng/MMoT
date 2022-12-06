@@ -21,28 +21,52 @@
         <header class="jumbotron text-center" style="padding: 2%;">
             <!-- Title -->
             <div class="container">
-                <h2 class="jumbotron-heading">MMoT: Mixture-of-Modality-Tokens Transformer <br /> for Composed Multimodal Conditional Image Synthesis</h2>
+                <h1><b>MMoT: Mixture-of-Modality-Tokens Transformer <br /> for Composed Multimodal Conditional Image Synthesis</b></h2>
             </div>
             
-            <div class="buttons">
-                <a target="_blank" class="btn btn-secondary my-2">Paper</a>
-                <a target="_blank" class="btn btn-secondary my-2">Arxiv</a>
-                <a target="_blank" class="btn btn-secondary my-2">Video</a>
-                <a target="_blank" class="btn btn-secondary my-2">Code</a>
+            <div class="buttons" style="margin-top: 30px;">
+                <!-- PDF Link. -->
+                <a href="" target="_blank" class="link-block btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+                        <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+                        <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
+                      </svg>
+                    Paper
+                </a>
+                <!-- video link. -->
+                <a href="" target="_blank" class="link-block btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-play-fill" viewBox="0 0 16 16">
+                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6 6.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43V6.884z"/>
+                      </svg>
+                    Video 
+                </a>
+                <!-- code link. -->
+                <a href="" target="_blank" class="link-block btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    Code 
+                </a>
             </div>
-            
+
         </header>
         
         <main>
+            <!-- Video-->
+            <section class="container text-justify" style="max-width: 1024px;">
+                <h5 class="text-center"><b>Video</b></h5>
+                <hr>
+            </section>
+
             <!-- Abstract -->
-            <section class="container text-justify">
-                <h5 class="text-center">Abstract</h5>
+            <section class="container text-justify" style="max-width: 1024px;">
+                <h5 class="text-center"><b>Abstract</b></h5>
                 <p>
                     Existing multimodal conditional image synthesis (MCIS) methods generate images conditioned on any combinations of various modalities that require all of them must be exactly conformed, hindering the synthesis controllability and leaving the potential of cross-modality under-exploited.
                     To this end, we propose to generate images conditioned on the compositions of multimodal control signals, where modalities are imperfectly complementary, i.e., composed multimodal conditional image synthesis (CMCIS).
                     Specifically, to address the modality coordination problem, we introduce the Mixture-of-Modality-Tokens Transformer (MMoT) that adaptively fuses fine-grained multimodal control signals.
                     For the modality imbalance problem, we propose a multimodal balanced training loss to stabilize the optimization of each modality, and a multimodal sampling guidance to balance the strength of each modality control signal.
-                    Comprehensive experimental results demonstrate that MMoT achieves superior performance on both UCIS and MCIS tasks with high-quality and faithful image synthesis on complex multimodal conditions.
+                    Comprehensive experimental results demonstrate that MMoT achieves superior performance on both unimodal conditional image synthesis (UCIS) and multimodal conditional image synthesis (MCIS) tasks with high-quality and faithful image synthesis on complex multimodal conditions.
                 </p>
                 
                 <!-- Teaser image -->
@@ -56,15 +80,9 @@
                 <hr>
             </section>
 
-            <!-- Video-->
-            <section class="container text-justify">
-                <h5 class="text-center">Video</h5>
-                <hr>
-            </section>
-
             <!-- Framework-->
-            <section class="container text-justify">
-                <h5 class="text-center">Framework</h5>
+            <section class="container text-justify" style="max-width: 1024px;">
+                <h5 class="text-center"><b>Framework</b></h5>
                 <p>
                     The figure below is the overview of the <i>Mixture-of-Modality-Tokens Transformer</i> for CMCIS task. 
                     Given image and multiple modalities, including text, segmentation masks, sketch and bounding boxes, we tokenize them into discrete tokens with different tokenizers, 
@@ -83,17 +101,17 @@
             </section>
 
             <!-- Results-->
-            <section class="container text-justify">
-                <h5 class="text-center">Results</h5>
+            <section class="container text-justify" style="max-width: 1024px;">
+                <h5 class="text-center"><b>Results</b></h5>
                 <!-- UCIS Comparisons-->
                 <p>
-                    MMoT achieves superior performance on UCIS task compared with a wide range of existing methods, including text-to-image methods (DF-GAN, DM-GAN+CL), 
-                    segmentation-to-image methods (SPADE, OASIS), 
-                    sketch-to-image methods (Pix2PixHD, SPADE, VQGAN+T), 
-                    layout-to-image methods (LostGAN-V2, Context-L2I, TwFA),
-                    and the state-of-the-art MCIS method (PoE-GAN).
+                    MMoT achieves superior performance on UCIS task compared with a wide range of existing methods, including text-to-image methods (<a href="https://arxiv.org/abs/2008.05865" target="_blank">DF-GAN</a>, <a href="https://arxiv.org/abs/2107.02423" target="_blank">DM-GAN+CL</a>),
+                    segmentation-to-image methods (<a href="https://nvlabs.github.io/SPADE/" target="_blank">SPADE</a>, <a href="https://arxiv.org/abs/2012.04781" target="_blank">OASIS</a>)
+                    sketch-to-image methods (<a href="https://arxiv.org/abs/1711.11585" target="_blank">Pix2PixHD</a>, <a href="https://nvlabs.github.io/SPADE/" target="_blank">SPADE</a>, <a href="https://arxiv.org/abs/2012.09841" target="_blank">VQGAN+T</a>)
+                    layout-to-image methods (<a href="https://arxiv.org/abs/2003.11571" target="_blank">LostGAN-V2</a>, <a href="https://arxiv.org/abs/2103.11897" target="_blank">Context-L2I</a>, <a href="https://arxiv.org/abs/2206.00923" target="_blank">TwFA</a>) 
+                    and the state-of-the-art MCIS method (<a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a>).
                 </p>
-                <div class="container" style="max-width: 960px;">
+                <div class="container" style="max-width: 1024px;">
                     <div id="ucis" class="carousel slide" data-interval="false" data-ride="carousel">
                         <ol class="carousel-indicators hidden">
                             <li data-target="#ucis" data-slide-to="0" class="active"></li>
@@ -102,27 +120,198 @@
                         </ol>
 
                         <div class="carousel-inner">
+                            <!-- text-to-image-->
                             <div class="carousel-item active">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/Comparisons/t2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Text</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2008.05865" target="_blank">DF-GAN</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2107.02423" target="_blank">DM-GAN+CL</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours)</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A view of mountains from the window of a jet airplane.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dfgan_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dmgan_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/poegan_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/mmot_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A blueberry cake is on a plate and is topped with butter.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dfgan_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dmgan_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/poegan_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/mmot_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A red blue and yellow train and some people on a platform.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dfgan_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dmgan_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/poegan_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/mmot_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A man blowing out candles on a birthday cake.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dfgan_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dmgan_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/poegan_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/mmot_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A desk set up as a workstation with a laptop.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dfgan_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/dmgan_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/poegan_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/t2i/mmot_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
                                     <div class="grid-text"><p>Qualitative comparison of text-to-image synthesis on COCO-Stuff.</p></div>
                                 </div>
                             </div>
+
+                            <!-- segmentation-to-image-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/Comparisons/s2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Segmentation</h6></div>
+                                    <div class="grid-item"><h6><a href="https://nvlabs.github.io/SPADE/" target="_blank">SPADE</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2012.04781" target="_blank">OASIS</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours)</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/seg_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/spade_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/oasis_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/poegan_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/mmot_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/seg_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/spade_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/oasis_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/poegan_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/mmot_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/seg_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/spade_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/oasis_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/poegan_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/mmot_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/seg_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/spade_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/oasis_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/poegan_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/mmot_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/seg_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/spade_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/oasis_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/poegan_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/s2i/mmot_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
                                     <div class="grid-text"><p>Qualitative comparison of segmentation-to-image synthesis on COCO-Stuff.</p></div>
                                 </div>
                             </div>
+
+                            <!-- sketch-to-image-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/Comparisons/k2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Sketch</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/1711.11585" target="_blank">Pix2PixHD</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://nvlabs.github.io/SPADE/" target="_blank">SPADE</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2012.09841" target="_blank">VQGAN+T</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours)</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/sketch_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/p2p_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/spade_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/vt_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/mmot_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/sketch_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/p2p_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/spade_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/vt_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/mmot_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/sketch_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/p2p_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/spade_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/vt_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/mmot_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/sketch_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/p2p_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/spade_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/vt_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/mmot_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/sketch_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/p2p_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/spade_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/vt_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/k2i/mmot_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
                                     <div class="grid-text"><p>Qualitative comparison of sketch-to-image synthesis on COCO-Stuff.</p></div>
                                 </div>
                             </div>
+
+                            <!-- layout-to-image-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/Comparisons/b2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Layout</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2003.11571" target="_blank">LostGAN-V2</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2103.11897" target="_blank">Context-L2I</a></h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2206.00923" target="_blank">TwFA</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours)</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/bbox_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/lostgan_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/context_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/twfa_1.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/mmot_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/bbox_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/lostgan_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/context_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/twfa_2.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/mmot_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/bbox_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/lostgan_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/context_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/twfa_3.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/mmot_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/bbox_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/lostgan_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/context_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/twfa_4.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/mmot_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/bbox_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/lostgan_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/context_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/twfa_5.jpg" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/Comparisons/b2i/mmot_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
                                     <div class="grid-text"><p>Qualitative comparison of layout-to-image synthesis on COCO-Stuff.</p></div>
                                 </div>
                             </div>
@@ -138,7 +327,6 @@
                         </a>
                     </div>
                 </div>
-
                 <hr>
                 
                 <!-- CMCIS Comparisons-->
@@ -146,7 +334,7 @@
                     MMoT can generate high-quality, faithful, and diverse images when conditioned on complex compositions of different modalities while the MCIS model (PoE-GAN) is struggle with the modality coordination
                     problem and the modality imbalance problem. Below we show some examples generated by PoE-GAN and our MMoT when tested on the CMCIS setting.
                 </p>
-                <div class="container" style="max-width: 960px;">
+                <div class="container" style="max-width: 1024px;">
                     <div id="mcis" class="carousel slide" data-interval="false" data-ride="carousel">
                         <ol class="carousel-indicators hidden">
                             <li data-target="#mcis" data-slide-to="0" class="active"></li>
@@ -155,19 +343,171 @@
                         </ol>
 
                         <div class="carousel-inner">
+                            <!-- text+segmentation-->
                             <div class="carousel-item active">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Condition #1<br>(Text)</h6></div>
+                                    <div class="grid-item"><h6>Condition #2<br>(Segmentation)</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>The mountain near the grassland.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A tree in the desert with mountains at a distance.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A beach with white sand,  and the rising sun in the sky.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A waterfall between mountains.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A river in the desert.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>The towering trees are surrounded by colorful clouds.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/seg_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/poegan_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot1_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/ts2i/mmot2_6.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on text+segmentation.</p></div>
                                 </div>
                             </div>
+
+                            <!-- text+sketch-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Condition #1<br>(Text)</h6></div>
+                                    <div class="grid-item"><h6>Condition #2<br>(Sketch)</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A tree stands in the desert.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A tree stands on the river.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A small dirt road runs through the forest.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A lake in the gravel land with white clouds in the blue sky.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>The rising sun in the sky.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>Ocean waves crash into rocks.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/sketch_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/poegan_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot1_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/tk2i/mmot2_6.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on text+sketch.</p></div>
                                 </div>
                             </div>
+
+                            <!-- segmentation+sketch-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Conditions<br>(Segmentation+Sketch)</h6></div>
+                                    <div class="grid-item"><h6><a href="https://arxiv.org/abs/2112.05130" target="_blank">PoE-GAN</a></h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_1.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_2.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_3.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_4.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_5.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/sk_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/poegan_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot1_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot2_6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/sk2i/mmot3_6.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on segmentation+sketch.</p></div>
                                 </div>
                             </div>
                         </div>
@@ -182,15 +522,14 @@
                         </a>
                     </div>
                 </div>
-
                 <hr>
                 
                 <!-- More CMCIS examples-->
                 <p>
                     Below are examples of composed multimodal conditional image synthesis tested on CoCo-Stuff. We show three random samples from MMoT conditioned on compositions of different modalities 
-                    (text+segmentation, text+sketch, text+layout, segmentation+sektch, layout_sketch, segmentation+sketch+layout).
+                    (text+segmentation, text+sketch, text+layout, segmentation+sektch, layout+sketch).
                 </p>
-                <div class="container" style="max-width: 960px;">
+                <div class="container" style="max-width: 1024px;">
                     <div id="cmcis" class="carousel slide" data-interval="false" data-ride="carousel">
                         <ol class="carousel-indicators hidden">
                             <li data-target="#cmcis" data-slide-to="0" class="active"></li>
@@ -199,14 +538,137 @@
                         </ol>
 
                         <div class="carousel-inner">
+                            <!-- text+segmentation-->
                             <div class="carousel-item active">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Condition #1<br>(Text)</h6></div>
+                                    <div class="grid-item"><h6>Condition #2<br>(Segmentation)</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A small airplane is flying in the sky.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s11.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s21.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s31.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A kitchen and dining area decorated in white.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s12.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s22.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s32.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on text+segmentation.</p></div>
                                 </div>
                             </div>
+
+                            <!-- text+sketch-->
                             <div class="carousel-item">
-                                <div class="grid-container-whole" style="width: 90%; margin-left: auto; margin-right: auto">
-                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2.png" style="width: 100%;"></div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Condition #1<br>(Text)</h6></div>
+                                    <div class="grid-item"><h6>Condition #2<br>(Sketch)</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A passenger bus pulling up to the side of a street.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s13.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s23.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s33.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A dog following a man on his horse in a field.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s14.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s24.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s34.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on text+sketch.</p></div>
+                                </div>
+                            </div>
+
+                            <!-- text+layout-->
+                            <div class="carousel-item">
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Condition #1<br>(Text)</h6></div>
+                                    <div class="grid-item"><h6>Condition #2<br>(Layout)</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>An urban intersection with stoplights on a cloudy day.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c5.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s15.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s25.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s35.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-5" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><div style="margin-left: 10px; margin-right: 10px;"><h6>A white boat some green hills and water.</h6></div></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/c6.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s16.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s26.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_1/s36.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on text+layout.</p></div>
+                                </div>
+                            </div>
+
+                            <!-- segmentation+sketch-->
+                            <div class="carousel-item">
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Conditions<br>(Segmentation+Sketch)</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/c1.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s11.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s21.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s31.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/c2.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s12.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s22.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s32.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on segmentation+sketch.</p></div>
+                                </div>
+                            </div>
+
+                            <!-- layout+sketch-->
+                            <div class="carousel-item">
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><h6>Conditions<br>(Layout+Sketch)</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #1</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #2</h6></div>
+                                    <div class="grid-item"><h6>MMoT (Ours) #3</h6></div>
+                                </div>
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/c3.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s13.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s23.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s33.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-4" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/c4.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s14.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s24.png" style="width: 100%;"></div>
+                                    <div class="grid-item"><img src="./assets/CMCIS/coco_2/s34.png" style="width: 100%;"></div>
+                                </div>
+                                <div class="grid-container-1" style="margin-left: auto; margin-right: auto">
+                                    <div class="grid-text"><p>CMCIS samples conditioned on layout+sketch.</p></div>
                                 </div>
                             </div>
                         </div>
@@ -221,18 +683,18 @@
                         </a>
                     </div>
                 </div>
+                <hr>
                 
             </section>
         </main>
         
         <footer class="text-muted">
-            <div class="container">
+            <div class="container" style="max-width: 1024px;">
                 <p class="float-right">
                     <a href="#">Back to top</a>
                 </p>
             </div>
         </footer>
-
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
